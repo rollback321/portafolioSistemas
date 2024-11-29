@@ -250,6 +250,34 @@
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+  
 
 })()
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const elementos = document.querySelectorAll('.portfolio-img');
+  const audio = document.getElementById('font_audio');
+  audio.volume = 0.4
+
+  elementos.forEach(elemento => {
+    elemento.addEventListener('click', () => {   
+        audio.play()
+        html_img = elemento.querySelector(".img-fluid");
+        const src = html_img.getAttribute('src');
+        const enlace = document.querySelector(`a[href="${src}"]`);
+        enlace.click();    
+    });
+  });
+ 
+});
+
+function sendEmail() {
+            const email = 'example@example.com';
+            const subject = encodeURIComponent('Consulta sobre servicios');
+            const body = encodeURIComponent('Hola, me gustaría saber más sobre tus servicios.');
+            
+            // Usa window.open para abrir el esquema mailto
+            window.open(`mailto:${email}?subject=${subject}&body=${body}`);
+        }
+
