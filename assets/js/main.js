@@ -246,12 +246,9 @@
       clickable: true
     }
   });
-
   /**
    * Initiate Pure Counter 
-   */
-  
-
+   */  
 })()
 
 document.addEventListener('DOMContentLoaded', () => {

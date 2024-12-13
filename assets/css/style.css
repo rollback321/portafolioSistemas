@@ -1648,3 +1648,107 @@ section {
  /** 75%{transform:translate(0px, 25px); opacity: 0.75;}   */ 
   100%{transform: translateY(0); opacity: 1;}
 }
+
+/*******/
+
+/* Contenedor del texto */
+.wave-container {
+  background-color:#1e1e1e00;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Animación de olas en cada letra */
+.wave-container span {
+  display: inline-block;
+  animation: wave 12.0s infinite;
+}
+
+/* Para cada letra, retrasar el inicio de la animación */
+.wave-container span:nth-child(1) { animation-delay: 0s; }
+.wave-container span:nth-child(2) { animation-delay: 0.5s; }
+.wave-container span:nth-child(3) { animation-delay: 1.0s; }
+.wave-container span:nth-child(4) { animation-delay: 1.5s; }
+.wave-container span:nth-child(5) { animation-delay: 2.0s; }
+.wave-container span:nth-child(6) { animation-delay: 2.5s; }
+.wave-container span:nth-child(7) { animation-delay: 3.0s; }
+.wave-container span:nth-child(8) { animation-delay: 3.5s; }
+.wave-container span:nth-child(9) { animation-delay: 4.0s; }
+.wave-container span:nth-child(10) { animation-delay: 4.5s; }
+
+.wave-container span:nth-child(11) { animation-delay: 5.0s; }
+.wave-container span:nth-child(12) { animation-delay: 5.5s; }
+.wave-container span:nth-child(13) { animation-delay: 6.0s; }
+.wave-container span:nth-child(14) { animation-delay: 6.5s; }
+.wave-container span:nth-child(15) { animation-delay: 7.0s; }
+.wave-container span:nth-child(16) { animation-delay: 7.5s; }
+.wave-container span:nth-child(17) { animation-delay: 8.0s; }
+.wave-container span:nth-child(18) { animation-delay: 8.5s; }
+.wave-container span:nth-child(19) { animation-delay: 9.0s; }
+.wave-container span:nth-child(20) { animation-delay: 9.5s; }
+.wave-container span:nth-child(21) { animation-delay: 10.0s; }
+.wave-container span:nth-child(22) { animation-delay: 10.5s; }
+.wave-container span:nth-child(23) { animation-delay: 11.0s; }
+.wave-container span:nth-child(24) { animation-delay: 11.5s; }
+.wave-container span:nth-child(25) { animation-delay: 12.0s; }
+
+/* Definición de la animación de las olas */
+@keyframes wave {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}  
+
+ /* Contenedor del texto */
+        .wave-container-zoom {
+            font-family: 'Arial', sans-serif;
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+
+        /* Animación de zoom en cada letra */
+        .wave-container-zoom span {
+            display: inline-block;
+            animation: zoomWave 5.0s ease-in-out infinite;
+        }
+
+        /* Para cada letra, retrasar el inicio de la animación */
+        .wave-container-zoom span:nth-child(1) { animation-delay: 0s; }
+        .wave-container-zoom span:nth-child(2) { animation-delay: 0.5s; }
+        .wave-container-zoom span:nth-child(3) { animation-delay: 1.0s; }
+        .wave-container-zoom span:nth-child(4) { animation-delay: 1.5s; }
+        .wave-container-zoom span:nth-child(5) { animation-delay: 2.0s; }
+        .wave-container-zoom span:nth-child(6) { animation-delay: 2.5s; }
+        .wave-container-zoom span:nth-child(7) { animation-delay: 3.0s; }
+        .wave-container-zoom span:nth-child(8) { animation-delay: 3.5s; }
+        .wave-container-zoom span:nth-child(9) { animation-delay: 4.0s; }
+        .wave-container-zoom span:nth-child(10) { animation-delay: 4.5s; }
+        .wave-container-zoom span:nth-child(11) { animation-delay: 5.0s; }
+
+        /* Definición de la animación de zoom en ola */
+        @keyframes zoomWave {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /*****
+
+        
